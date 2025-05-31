@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Master Password</title>
+  <style>
+    body {
+      width: 300px; /* Set a desired width for your popup */
+      height: 200px; /* Set a desired height for your popup */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      font-size: 16px; /* Slightly smaller for better fit */
+      background-color: #f8f8f8; /* Lighter background */
+      border: 1px solid #ddd; /* Softer border */
+      padding: 10px;
+      box-sizing: border-box; /* Include padding in width/height */
+      margin: 0; /* Remove default body margin */
+    }
+
+    form {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      gap: 15px; /* Space between elements */
+      width: 80%; /* Form takes up most of the body width */
+      max-width: 250px; /* Max width for larger screens if not a popup */
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      align-items: center; /* Center items horizontally within the form */
+    }
+
+    label {
+      font-weight: bold;
+      color: #333;
+      font-size: 18px; /* Make label prominent */
+    }
+
+    input[type="password"] {
+      width: 100%; /* Input takes full width of the form */
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      box-sizing: border-box; /* Include padding in width */
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4 执行 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #message {
+      margin-top: 10px;
+      color: red; /* Default for error messages */
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="password-form">
+    <label for="master-pass">Enter Master Password:</label>
+    <input type="password" id="master-pass" placeholder="Your Master Password" required>
+    
+    <div id="Pass"></div> 
+    
+    <button type="submit">Unlock</button>
+    <div id="message"></div>
+  </form>
+
+  <script src="popup.js"></script>
+</body>
+</html>
