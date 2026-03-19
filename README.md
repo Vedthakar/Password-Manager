@@ -20,7 +20,7 @@ This project includes a short demo showing the extension in action.
 ![Main Interface](./ss/main.png)
 
 ### giving correct password
-![password](./ss/pproof.png)
+![password](./ss/proof.png)
 
 ## What this project is
 
