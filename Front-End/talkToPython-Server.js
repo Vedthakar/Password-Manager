@@ -143,6 +143,12 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  if (req.method === 'GET' && req.url === '/health') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({ status: 'ok' }));
+    return;
+  }
+
   if (req.method === 'POST' && req.url === '/log-data') { // This is the route your Chrome extension POSTs to
     let body = '';
     req.on('data', chunk => {

@@ -3,7 +3,7 @@
 // to interact with the Node.js intermediary server (talkToPython.js)
 // for various password manager operations.
 
-const NODE_JS_SERVER_BASE_URL = 'http://localhost:3002'; // Your talkToPython.js server
+const NODE_JS_SERVER_BASE_URL = 'http://localhost:3001'; // Local bridge server
 
 /**
  * Authenticates the master password and optionally performs a search.

@@ -8,7 +8,7 @@ console.log('password.js loaded');
  */
 function sendPageDataToServer(data) {
     console.log('sendPageDataToServer called with:', data, 'at', new Date().toLocaleTimeString());
-    fetch('http://localhost:3000/log-hostname', {
+    fetch('http://localhost:3001/log-hostname', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

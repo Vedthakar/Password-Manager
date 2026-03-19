@@ -3,7 +3,7 @@
 
 // Function to send data to the Node.js intermediary server
 async function sendDataToNodeServer(data) {
-    const NODE_JS_SERVER_URL = 'http://localhost:3002/capture-website-login';
+    const NODE_JS_SERVER_URL = 'http://localhost:3001/capture-website-login';
 
     try {
         const response = await fetch(NODE_JS_SERVER_URL, {

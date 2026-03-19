@@ -49,8 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
           messageDiv.style.color = 'green';
           messageDiv.textContent = responseData.message; // e.g., "Password found for login.linode.com"
 
-          // --- MODIFIED: Display the actual password if found ---
+          if (responseData.password) {
             passDisplayDiv.textContent = `Password: ${responseData.password}`;
+          } else {
+            passDisplayDiv.textContent = '';
+          }
 
           // Optional: Auto-clear messages after a few seconds
           setTimeout(() => {
